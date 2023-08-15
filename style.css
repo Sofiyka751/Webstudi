@@ -18,12 +18,22 @@
 .item {
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
+  color: black;
 }
 
 .right  {
   display: flex;
   justify-content: space-around;
   text-indent: 50px;
+}
+
+.email {
+  text-decoration: none;
+}
+
+.number {
+  text-decoration: none;
 }
 
 
@@ -73,6 +83,11 @@ width: 15em;
 
 
   h2 {
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 0.03em;
     text-align: center;
 }
 
@@ -81,10 +96,18 @@ width: 15em;
 }
 
 h3 {
-  display: flex;
-    justify-content: space-around;
+    font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: 42px;
+letter-spacing: 0.03em;
+text-align: center;
+
 }
 
+li {
+  display: flex;
+}
 
 
 footer {
