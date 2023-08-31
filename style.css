@@ -13,8 +13,18 @@
 .list  {
   display: flex;
   justify-content: space-around;
-  margin: auto;
+  margin: 0 auto;
   text-indent: 50px;
+  gap: 5px;
+}
+
+.item_i {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  padding-right: 50px;
+    margin-right: 50px;
 }
 
 .item {
@@ -22,12 +32,15 @@
   justify-content: space-around;
   text-decoration: none;
   color: black;
+  padding-right: 15px;
+    margin-right: 15px;
 }
 
 .right  {
   display: flex;
   justify-content: space-around;
   text-indent: 50px;
+  gap: 10px;
 }
 
 .email {
@@ -113,6 +126,19 @@ letter-spacing: 0.03em;
 .web{
   display: flex;
   padding: 25px;
+  justify-content: space-between;
+}
+
+.card {
+  border: solid 2px rgb(197, 207, 216);
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
 }
 
 h3 {
@@ -133,4 +159,10 @@ footer {
   display: block;
     background-color: rgb(83, 73, 73);
     -webkit-text-fill-color: rgb(255, 255, 255);
+    padding-left: 50px;
+}
+
+.webs {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
