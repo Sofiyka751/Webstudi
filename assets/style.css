@@ -86,7 +86,7 @@ color: #087df9;
 fill: #087df9;
 }
 
-.container { 
+.up_content { 
   height: 500px;
   top: 80px;
   background-image: url(./photo/first_back.png);
@@ -98,8 +98,8 @@ fill: #087df9;
 
 .up {
   display: flex;
-  justify-content: space-around;
   margin-top: 30px;
+  justify-content: center;
 }
 
   .icon-antenna-1,
@@ -107,6 +107,14 @@ fill: #087df9;
   .icon-diagram-1,
   .icon-astronaut-1 {
     font-size: 330%;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
   }
 
   .tablet {
@@ -167,36 +175,7 @@ width: 15em;
     border: none;
   }
   
-/* .all {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.all:hover .textsap {
-  opacity: 1;
-}
-
-.textsap {
-  position: absolute;
-  top: 208px;
-  left: 20px;
-  width: 31%;
-  height: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.5s;
-  color: white;
-}
-
-.textsap p {
-  color: #fff;
-    font-size: 14px;
-    text-align: center;
-} */
 
 .all {
   padding: 21px; 
@@ -216,9 +195,9 @@ width: 15em;
 
 .textsap {
   position: absolute;
-  top: 211px;
-  left: 25px;
-  width: 89%;
+  top: 212px;
+  left: 27px;
+  width: 88%;
   height: 16%;
   display: flex;
   align-items: center;
@@ -228,6 +207,8 @@ width: 15em;
   transition: opacity 0.7s;
   color: white;
 }
+
+
 
 .textsap p {
   color: #fff;
@@ -252,9 +233,9 @@ width: 15em;
 
 .textsap2 {
   position: absolute;
-  top: 211px;
-  left: 25px;
-  width: 89%;
+  top: 212px;
+  left: 27px;
+  width: 88%;
   height: 16%;
   display: flex;
   align-items: center;
@@ -287,9 +268,9 @@ width: 15em;
 
 .textsap3 {
   position: absolute;
-  top: 211px;
-  left: 25px;
-  width: 89%;
+  top: 212px;
+  left: 27px;
+  width: 88%;
   height: 16%;
   display: flex;
   align-items: center;
@@ -379,8 +360,9 @@ li {
 }
 
 .visitors {
-   display: flex;
-    margin: 45px 0px
+  display: flex;
+  margin: 45px 0px;
+  justify-content: space-evenly;
 }
 
 
