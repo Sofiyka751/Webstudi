@@ -40,6 +40,30 @@
   color: #087df9;
 }
 
+.item a {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.item a:hover::after {
+  position: absolute;
+  left: 35px;
+  display: block;
+  content: '';
+  width: 85px;
+  height: 4px;
+  background-color: #2196F3;
+  border-radius: 2px;
+  bottom: -15px;
+}
+
 .right  {
   display: flex;
   justify-content: space-around;
@@ -327,13 +351,27 @@ height: 395px;
   text-align: center;
 }
 
-.po:hover {
-fill: white;
+
+.internet{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.social:hover {
-  fill: #087df9;
+.fo-link{
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+  fill: #AFB1B8;
 }
+
+.fo-link:hover{
+  background-color: #087df9;
+  fill: #fff;
+}
+
+
 
 
 h3 {

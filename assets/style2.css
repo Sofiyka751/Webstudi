@@ -39,6 +39,30 @@
   .item:hover {
     color: #087df9;
   }
+
+  .item a {
+    color: #212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.item a:hover::after {
+    position: absolute;
+    left: 35px;
+    display: block;
+    content: '';
+    width: 85px;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 2px;
+    bottom: -15px;
+}
   
   .right  {
     display: flex;
