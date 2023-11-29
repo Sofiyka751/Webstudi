@@ -52,6 +52,7 @@
     display: inline-block;
 }
 
+
 .item a:hover::after {
     position: absolute;
     left: 35px;
