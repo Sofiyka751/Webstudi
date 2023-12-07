@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEBSTUDIO</title>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/style.css">
@@ -53,14 +53,85 @@
             </div>
         </div>
     </header>
-    <main class="second">
+    <!-- <main class="second">
         <section class="up_content">
                 <h1> 
                 Ефективне рішення
                  для вашого бізнесу
                 </h1>
-                <button type="buton">     
+                <button class="buton" type="button">     
                     Замовити послугу</button>
+        </section>
+    </main> -->
+
+    <main class="second">
+        <section class="up_content">
+                <h1 class="man_head"> 
+                Ефективне рішення
+                 для вашого бізнесу
+                </h1>
+                <!-- <button class="buton" type="button">     
+                    Замовити послугу</button> -->
+                    <button class="buton btn-open" data-modal-open>Замовити послуги</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <span class="btn" data-modal-close>
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 4.10786L13.8921 3L9.5 7.39214L5.10786 3L4 4.10786L8.39214 8.5L4 12.8921L5.10786 14L9.5 9.60786L13.8921 14L15 12.8921L10.6079 8.5L15 4.10786Z" fill="inherit"/>
+                </svg>
+            </span>
+            <h1 class="moda_head">
+              Залиште свої дані, ми вам передзвонимо
+            </h1>
+            <form>
+              <div class="input-after-button">
+                <div class="inpu_nm">
+                  <label for="name"> Ім'я
+                    <div class="search_nm">
+                        <input type="name" class="search_nam">
+                    </div>
+                    </label>
+                </div>
+                <div class="inpu_tl">
+                  <label for="tel"> Телефон
+                    <div class="search_tl">
+                      <input type="tel" class="search_tel">
+                    </div>
+                  </label>
+                </div>
+                <div class="inpu_ml">
+                  <label for="emeil"> Пошта
+                    <div class="serch_ml">
+                      <input type="emeil" class="search_mal">
+                    </div>
+                  </label>
+                </div>
+                <div class="inpu_cmm">
+                  <label for="text">Коментар
+                    <div class="search_cmm">
+                      <textarea class="search_coment" name="text" id="" cols="30" rows="10"></textarea>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="text_input">
+              <div class="text_inpu_after">
+                <label>
+                  <input type="checkbox">
+                </label>
+                <p class="text_after">
+                  Погоджуюся з розсилкою та приймаю
+                </p>
+                <a href="#" class="textt_after">
+                  Умови договору
+                </a>
+              </div>
+              <button class="inpu_button">Відправити</button>
+            </div>
+          </div>
+        </div>
+        
         </section>
     </main>
     <div class="container">
@@ -461,6 +532,23 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="none"><path class="socia" fill="#fff" d="M44 22a21.931 21.931 0 0 1-6.444 15.556A21.931 21.931 0 0 1 22 44a21.931 21.931 0 0 1-15.556-6.444A21.931 21.931 0 0 1 0 22 21.931 21.931 0 0 1 6.444 6.444 21.931 21.931 0 0 1 22 0a21.931 21.931 0 0 1 15.556 6.444A21.931 21.931 0 0 1 44 22Z"/><g class="col_f" fill="#AFB1B8" clip-path="url(#a)"><path d="M31.995 32H32v-7.336c0-3.588-.772-6.352-4.967-6.352-2.017 0-3.37 1.106-3.923 2.155h-.058v-1.82h-3.978v13.352h4.142v-6.611c0-1.741.33-3.425 2.486-3.425 2.124 0 2.156 1.987 2.156 3.536V32h4.137ZM12.33 18.648h4.147V32H12.33V18.648ZM14.402 12A2.402 2.402 0 0 0 12 14.402c0 1.325 1.076 2.424 2.402 2.424 1.325 0 2.401-1.099 2.401-2.424A2.403 2.403 0 0 0 14.402 12Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M12 12h20v20H12z"/></clipPath></defs></svg>
                     </div>
                 </div>
+                <div class="last">
+                    <h6 class="last_head">Підпишіться на розсилку</h6>
+                    <div class="last_down">
+                        <form>
+                            <input type="email" class="box" placeholder="E-mail">
+                        </form>
+                        <button class="down_but">
+                            <p class="do_text">Підписатися 
+                            </p>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
         </footer>
+
+        <script src="./main.js"></script>
 </body>
 </html>
