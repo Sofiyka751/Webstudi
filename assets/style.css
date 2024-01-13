@@ -195,6 +195,21 @@ fill: #087df9;
     color: #212121;
   }
 
+@keyframes gradienSlide {
+  25%{
+    background-color: #087df9;
+  }
+  50%{
+    background-color: #056fe0;
+  }
+  75%{
+    background-color: #025cbd;
+  }
+  100%{
+    background-color: #044f9e;
+  }
+}
+
   .buton {
     background-color: #087df9;
     -webkit-text-fill-color: rgb(253, 253, 253);
@@ -212,6 +227,10 @@ fill: #087df9;
     display: block;
     border: none;
   }
+
+.buton:hover {
+  animation: gradienSlide 3s both;
+}  
   
 
 
@@ -385,10 +404,18 @@ fill: #087df9;
 }
 
 .fo-link:hover{
-  background-color: #087df9;
+  animation: lineargradient 1s linear both;
   fill: #fff;
 }
 
+@keyframes lineargradient {
+  from{
+    background-color: #0066ff;
+  }
+  to{
+    background-color: #00cc99;
+  }
+}
 
 
 
@@ -421,8 +448,6 @@ li {
   justify-content: space-evenly;
 }
 
-
-
 .one {
   margin: 16px 32px;
   fill: #AFB1B8;
@@ -434,13 +459,23 @@ li {
   padding: 21px;
   margin-bottom: 30px;
   border-radius: 17px;
+  
 }
 
 .one:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
 }
 
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
+}
 
 .two {
   margin: 16px 32px;
@@ -456,8 +491,18 @@ li {
 }
 
 .two:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
+}
+
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
 }
 
 .three {
@@ -474,8 +519,18 @@ li {
 }
 
 .three:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
+}
+
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
 }
 
 .four {
@@ -492,8 +547,18 @@ li {
 }
 
 .four:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
+}
+
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
 }
 
 .five {
@@ -510,8 +575,18 @@ li {
 }
 
 .five:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
+}
+
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
 }
 
 .six {
@@ -528,8 +603,26 @@ li {
 }
 
 .six:hover {
-  fill: #087df9;
-  border: 2px solid #087df9;
+  animation: linearGradient 2s linear both;
+}
+
+@keyframes linearGradient {
+  from{
+    fill: #0099ff;
+    border: 2px solid #0099ff;
+  }
+  to{
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
+}
+
+.first {
+  transition: transform 0.6s linear;
+}
+
+.first:hover {
+  transform: scale(1.1);
 }
 
 
@@ -557,6 +650,7 @@ footer {
   line-height: 24px; 
   letter-spacing: 0.42px;
   color: #FFF;
+  transition: transform 1s linear;
 }
 
 .two_add {
@@ -567,6 +661,7 @@ footer {
   line-height: 24px;
   letter-spacing: 0.42px;
   color: rgba(255, 255, 255, 0.60);
+  transition: transform 1s linear;
 }
 
 .three_add {
@@ -577,6 +672,14 @@ footer {
   line-height: 24px;
   letter-spacing: 0.42px;
   color: rgba(255, 255, 255, 0.60);
+  transition: transform 1s linear;
+}
+
+.one_add:hover,
+.two_add:hover,
+.three_add:hover {
+  color: #0099ff;
+  transform: translateX(10px);
 }
 
 .down {
@@ -612,6 +715,31 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.down_but:hover {
+  animation: slideGradient 5s linear both;
+}
+
+@keyframes slideGradient {
+  25%{
+    background: #FF0000
+  }
+  50%{
+    background: #FF7F00;
+  }
+  75%{
+    background: #FFFF00;
+  }
+  80%{
+    background: #00FF00;
+  }
+  90%{
+    background: #0000FF;
+  }
+  100%{
+    background: #4B0082;
+  }
 }
 
 .last_down {

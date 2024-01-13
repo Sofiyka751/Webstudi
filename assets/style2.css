@@ -114,7 +114,30 @@
     display: flex;
     justify-content: center;
     margin-top: 94px;
+    gap: 8px;
   }
+
+  @keyframes slidenGradient {
+    15%{
+      background: #2196F3;
+    }
+    35%{
+      background: #2164f3;
+    }
+    55%{
+      background: #2835f1;
+    }
+    75%{
+      background: #4121f3;
+    }
+    100%{
+      background: #7c21f3;
+    }
+  }
+
+.tups:hover {
+ 
+}
 
   .but_one {
     width: 73px;
@@ -128,6 +151,7 @@
     border-radius: 4px;
     background: #2196F3;
     border: none;
+    animation: slidenGradient 3s both;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
   }
 
@@ -199,10 +223,8 @@
   .third {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 25px;
+    margin-bottom: 91px;
   }
-
-
 
   .card:hover {
     border: 1px solid #EEE;
@@ -269,6 +291,70 @@
     letter-spacing: 0.48px;
   }
 
+  .down_but {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .down_but:hover {
+    animation: slideGradient 10s linear both;
+  }
+  
+  @keyframes slideGradient {
+    25%{
+      background: #FF0000
+    }
+    50%{
+      background: #FF7F00;
+    }
+    75%{
+      background: #FFFF00;
+    }
+    80%{
+      background: #00FF00;
+    }
+    90%{
+      background: #0000FF;
+    }
+    100%{
+      background: #4B0082;
+    }
+  }
+  
+  .last_down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .last_head {
+    margin-bottom: 10px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  .box {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  }
+
 
   footer {
     display: block;
@@ -293,6 +379,7 @@
   font-weight: 400;
   line-height: 24px; 
   letter-spacing: 0.42px;
+  transition: transform 1s linear;
   }
   
   .two_add {
@@ -303,6 +390,7 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
+  transition: transform 1s linear;
   }
   
   .three_add {
@@ -313,8 +401,16 @@
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
+  transition: transform 1s linear;
   }
   
+.one_add:hover,
+.two_add:hover,
+.three_add:hover {
+  color: #0099ff;
+  transform: translateX(10px);
+}
+
   .down {
     color: #FFF;
     font-family: Roboto;
