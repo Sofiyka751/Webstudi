@@ -1,3 +1,8 @@
+.container {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 .container_ul { 
     display: flex;
      justify-content: space-around;
@@ -135,9 +140,6 @@
     }
   }
 
-.tups:hover {
- 
-}
 
   .but_one {
     width: 73px;
@@ -355,11 +357,17 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   }
 
+  
+footer {    
+  display: flex;
+  align-items: center;
+  background: #2F303A;
+  gap: 67px;
+}
 
-  footer {
-    display: block;
+  .foote {
+    align-items: center;
     background: #2F303A;
-    padding-left: 50px;
     display: flex;
     gap: 67px;
   }

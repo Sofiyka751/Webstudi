@@ -1,3 +1,8 @@
+.container {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 .container_ul { 
   display: flex;
    justify-content: space-around;
@@ -449,7 +454,6 @@ li {
 }
 
 .one {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -478,7 +482,6 @@ li {
 }
 
 .two {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -506,7 +509,6 @@ li {
 }
 
 .three {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -534,7 +536,6 @@ li {
 }
 
 .four {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -562,7 +563,6 @@ li {
 }
 
 .five {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -590,7 +590,6 @@ li {
 }
 
 .six {
-  margin: 16px 32px;
   fill: #AFB1B8;
   width: 117px;
   height: 39px;
@@ -948,12 +947,10 @@ footer {
 
 
 
-footer {    
+.foote {    
   display: flex;
   align-items: center;
   background: #2F303A;
-  padding-left: 50px;
-  display: flex;
   gap: 67px;
 }
 
