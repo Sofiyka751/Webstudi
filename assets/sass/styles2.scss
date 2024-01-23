@@ -1,28 +1,28 @@
 .container {
-  margin-left: 120px;
-  margin-right: 120px;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  
+.container_ul { 
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-.container_ul {
+.container_list  {
   display: flex;
   justify-content: space-around;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
-.container_list {
-  display: flex;
-  justify-content: space-around;
-}
-
-.list {
+.list  {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
   text-indent: 50px;
   gap: 5px;
 }
-
+    
 .item_i {
   display: flex;
   justify-content: space-around;
@@ -44,32 +44,33 @@
 .item:hover {
   color: #087df9;
 }
-
+  
 .item a {
-  color: #212121;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
+    color: #212121;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
 }
+
 
 .item a:hover::after {
   position: absolute;
   left: 42px;
   display: block;
-  content: "";
+  content: '';
   width: 59%;
   height: 4px;
   background-color: #2196F3;
   border-radius: 2px;
   bottom: -15px;
 }
-
-.right {
+    
+.right  {
   display: flex;
   justify-content: space-around;
   text-indent: 50px;
@@ -102,7 +103,7 @@
 }
 
 .mel:hover {
-  fill: #087df9;
+fill: #087df9;
 }
 
 .tep {
@@ -111,7 +112,7 @@
 }
 
 .tep:hover {
-  fill: #087df9;
+fill: #087df9;
 }
 
 .tups {
@@ -122,22 +123,24 @@
 }
 
 @keyframes slidenGradient {
-  15% {
+  15%{
     background: #2196F3;
   }
-  35% {
+  35%{
     background: #2164f3;
   }
-  55% {
+  55%{
     background: #2835f1;
   }
-  75% {
+  75%{
     background: #4121f3;
   }
-  100% {
+  100%{
     background: #7c21f3;
   }
 }
+
+
 .but_one {
   width: 73px;
   height: 38px;
@@ -151,7 +154,7 @@
   background: #2196F3;
   border: none;
   animation: slidenGradient 3s both;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .but_two {
@@ -166,7 +169,7 @@
   border-radius: 4px;
   background: #2196F3;
   border: none;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .but_three {
@@ -180,7 +183,7 @@
 .but_three:hover {
   border-radius: 4px;
   background: #2196F3;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .but_four {
@@ -195,7 +198,7 @@
   border: none;
   border-radius: 4px;
   background: #2196F3;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .but_five {
@@ -210,7 +213,7 @@
   border: none;
   border-radius: 4px;
   background: #2196F3;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .cont {
@@ -230,7 +233,7 @@
   background: #FFF;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-
+  
 .photo_text {
   position: relative;
 }
@@ -251,13 +254,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: rgba(33, 150, 243, 0.90);
   opacity: 0;
   transform: translate(-50%, -50%) translateY(100%);
   transition: transform 0.5s, opacity 0.5s;
   color: white;
 }
-
+  
 .hide_text p {
   white-space: pre;
   color: #fff;
@@ -306,25 +309,26 @@
 }
 
 @keyframes slideGradient {
-  25% {
-    background: #FF0000;
+  25%{
+    background: #FF0000
   }
-  50% {
+  50%{
     background: #FF7F00;
   }
-  75% {
+  75%{
     background: #FFFF00;
   }
-  80% {
+  80%{
     background: #00FF00;
   }
-  90% {
+  90%{
     background: #0000FF;
   }
-  100% {
+  100%{
     background: #4B0082;
   }
 }
+
 .last_down {
   display: flex;
   justify-content: space-around;
@@ -348,18 +352,19 @@
   width: 358px;
   height: 50px;
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(33, 150, 243, 0);
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
-
-footer {
+  
+    
+footer {    
   display: flex;
   align-items: center;
   background: #2F303A;
   gap: 67px;
 }
-
+  
 .foote {
   align-items: center;
   background: #2F303A;
@@ -375,45 +380,45 @@ footer {
 }
 
 .one_add {
-  color: #FFF;
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  transition: transform 1s linear;
+color: #FFF;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; 
+letter-spacing: 0.42px;
+transition: transform 1s linear;
 }
 
 .two_add {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  transition: transform 1s linear;
+color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+transition: transform 1s linear;
 }
 
 .three_add {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  transition: transform 1s linear;
+color: rgba(255, 255, 255, 0.60);
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.42px;
+transition: transform 1s linear;
 }
-
+  
 .one_add:hover,
 .two_add:hover,
 .three_add:hover {
   color: #0099ff;
   transform: translateX(10px);
 }
-
+  
 .down {
   color: #FFF;
   font-family: Roboto;
@@ -428,7 +433,7 @@ footer {
 }
 
 .socia {
-  fill: rgba(255, 255, 255, 0.1);
+  fill: rgba(255, 255, 255, 0.10);
 }
 
 .socia:hover {
@@ -437,4 +442,4 @@ footer {
 
 .col_f {
   fill: white;
-}/*# sourceMappingURL=style2.css.map */
+}

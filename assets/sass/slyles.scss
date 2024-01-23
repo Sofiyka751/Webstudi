@@ -1,19 +1,130 @@
-@import 'sass/header';
-
 .container {
     margin-left: 120px;
     margin-right: 120px;
 }
-  
-  .up_content { 
-    height: 500px;
-    top: 80px;
-    background-image: url(../photo/first_back.png);
-    margin: 0 auto; 
-    padding: 0 20px; 
-    box-sizing: border-box;
-    padding-top: 100px;
-    }
+
+.container_ul { 
+  display: flex;
+   justify-content: space-around;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.container_list  {
+  display: flex;
+  justify-content: space-around;
+}
+
+.list  {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-indent: 50px;
+  gap: 5px;
+}
+
+.item_i {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  padding-right: 50px;
+    margin-right: 50px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  color: black;
+  padding-right: 15px;
+    margin-right: 15px;
+}
+
+.item:hover {
+  color: #087df9;
+}
+
+.item a {
+  color: #212121;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.item a:hover::after {
+  position: absolute;
+  left: 42px;
+  display: block;
+  content: '';
+  width: 59%;
+  height: 4px;
+  background-color: #2196F3;
+  border-radius: 2px;
+  bottom: -15px;
+}
+
+
+.right  {
+  display: flex;
+  justify-content: space-around;
+  text-indent: 50px;
+  gap: 10px;
+}
+
+.email {
+  text-decoration: none;
+  color: black;
+}
+
+.email:hover {
+  color: #087df9;
+  fill: #087df9;
+}
+
+.number {
+  text-decoration: none;
+  color: black;
+}
+
+.number:hover {
+  color: #087df9;
+  fill: #087df9;
+}
+
+.mel {
+  width: 15px;
+  height: 15px;
+}
+
+.mel:hover {
+fill: #087df9;
+color: #087df9;
+}
+
+.tep {
+  width: 17px;
+  height: 15px;
+}
+
+.tep:hover {
+fill: #087df9;
+}
+
+.up_content { 
+  height: 500px;
+  top: 80px;
+  background-image: url(../photo/first_back.png);
+  margin: 0 auto; 
+  padding: 0 20px; 
+  box-sizing: border-box;
+  padding-top: 100px;
+}
   
   .up {
     display: flex;
@@ -826,6 +937,15 @@
     border: none;
     cursor: pointer;
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   .foote {    
     display: flex;
