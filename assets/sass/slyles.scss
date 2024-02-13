@@ -1,4 +1,5 @@
-@import "./components/_header.scss";
+@import "./components/header.scss";
+@import "./components/main.scss";
 
 @mixin flex-just-align($dspl, $align, $just) {
   display: $dspl;
@@ -38,116 +39,8 @@ $color: #087df9;
   padding: 0 10px;
 }
 
-.header__nav {
-  @include flex-just-align(flex, center, space-around);
-  padding: 15px 0;
-  gap: 70px;
-}
 
 
-
-.nav {
-  @include flex-just-align(flex, center, space-around);
-  gap: 40px;
-}
-
-.item_i {
-  @include flex-just-align(flex, center, space-around);
-  text-decoration: none;
-  color: black;
-}
-
-.nav__list {
-  @include flex-just-align(flex, center, space-around);
-  margin: 0 auto;
-  text-indent: 50px;
-}
-
-.nav__item {
-  @include flex-just-align(flex, center, space-around);
-  text-decoration: none;
-  color: black;
-  &:hover {
-    color: $color;
-  }
-}
-
-.nav__item a {
-  color: #212121;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  text-decoration: none;
-  position: relative;
-  display: inline-block;
-  &:hover::after {
-    position: absolute;
-    left: 43px;
-    display: block;
-    content: "";
-    width: 64%;
-    height: 4px;
-    background-color: #2196f3;
-    border-radius: 2px;
-    bottom: -32px;
-  }
-}
-
-.navigation--right {
-  @include flex-just-align(flex, center, space-around);
-  gap: 10px;
-}
-
-.address__right-email {
-  text-decoration: none;
-  color: rgb(117, 117, 117);
-  fill: rgb(117, 117, 117);
-  &:hover {
-    color: $color;
-    fill: $color;
-  }
-}
-
-.mel {
-  width: 15px;
-  height: 15px;
-  &:hover {
-    fill: #087df9;
-    color: #087df9;
-  }
-}
-
-.address__right-number {
-  text-decoration: none;
-  color: rgb(117, 117, 117);
-  fill: rgb(117, 117, 117);
-  &:hover {
-    color: #087df9;
-    fill: #087df9;
-  }
-}
-
-.tep {
-  width: 17px;
-  height: 15px;
-  &:hover {
-    fill: #087df9;
-  }
-}
-
-
-
-
-
-.main__content {
-  height: 500px;
-  background-image: url(../photo/first_back.png);
-  margin: 0 auto;
-  box-sizing: border-box;
-  padding-top: 100px;
-}
 
 .icon-antenna-1,
 .icon-clock-1,
@@ -213,31 +106,9 @@ $color: #087df9;
   @include flex-just-align(flex, center, center);
 }
 
-.main__title {
-  font-family: Roboto;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 60px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  -webkit-text-fill-color: rgb(253, 253, 253);
-  margin-left: auto;
-  margin-right: auto;
-  width: 15em;
-  height: 120px;
-}
 
-.modal__title {
-  width: 448px;
-  text-align: center;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.6px;
-  color: #212121;
-}
+
+
 
 @keyframes gradienSlide {
   25% {
@@ -254,25 +125,7 @@ $color: #087df9;
   }
 }
 
-.main__buton {
-  background-color: #087df9;
-  -webkit-text-fill-color: rgb(253, 253, 253);
-  margin: auto;
-  padding: 10px 32px;
-  top: 440px;
-  left: 724px;
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-  display: block;
-  border: none;
-  &:hover {
-    animation: gradienSlide 3s both;
-  }
-}
+
 
 .profession__content {
   padding: 21px;
@@ -566,168 +419,32 @@ li {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
 
 .no-scroll {
   overflow: hidden;
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 528px;
-  height: 581px;
-  flex-shrink: 0;
-  padding: 15px;
-  background-color: rgb(255, 255, 255);
-  transform: translate(-50%, -50%);
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
 
-.form__search-name {
-  border: 1px solid #b4b1b1;
-  background-image: url(../svv/person-black-18dp\ 1.svg);
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  &:focus,
-  &:focus-visible {
-    background-image: url(../svv/person-black-18dp\ 1\ —\ copy.svg);
-    border: none;
-    outline: 2px solid #188ce8;
-  }
-}
 
-.form__search-telephon {
-  background-image: url(../svv/phone-black-18dp\ 1.svg);
-  border: 1px solid #b4b1b1;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  &:focus,
-  &:focus-visible {
-    background-image: url(../svv/phone-black-18dp\ 1\ —\ copy.svg);
-    border: none;
-    outline: 2px solid #188ce8;
-  }
-}
 
-.form__search-email {
-  background-image: url(../svv/email-black-18dp\ 1.svg);
-  border: 1px solid #b4b1b1;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  &:focus,
-  &:focus-visible {
-    background-image: url(../svv/email-black-18dp\ 1\ —\ copy.svg);
-    border: none;
-    outline: 2px solid #188ce8;
-  }
-}
 
-.form__search-comentar {
-  border: 1px solid #b4b1b1;
-  background-repeat: no-repeat;
-  padding-left: 20px;
-  &:focus,
-  &:focus-visible {
-    border: none;
-    outline: 2px solid #188ce8;
-  }
-}
 
-.form__dictates-name,
-.form__dictates-telephon,
-.form__dictates-email,
-.form__dictates-comentar {
-  margin: 15px;
-}
+
 
 .text_inpu_after {
   margin-bottom: 15px;
 }
 
-.modal__btn {
-  fill: #000000;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  border-radius: 30px;
-  stroke-width: 1px;
-  &:hover,
-  &:focus {
-    fill: #188ce8;
-    text-decoration: none;
-    cursor: pointer;
-  }
-}
 
-.modal__sub_text {
-  text-align: center;
-}
 
-.modal__privacy-policy {
-  @include flex-just-align(flex, center, center);
-}
 
-.modal__privacy-policy-text {
-  color: #757575;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  padding-left: 8px;
-}
 
-.modal__privacy-policy-text_link {
-  color: #2196f3;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
-  text-decoration-line: underline;
-}
 
-.modal__button-send {
-  width: 200px;
-  height: 50px;
-  flex-shrink: 0;
-  border-radius: 4px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 19px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.96px;
-  border: none;
-  cursor: pointer;
-}
+
+
+
+
 
 .footer {
   @include flex-just-align(flex, center, center);
