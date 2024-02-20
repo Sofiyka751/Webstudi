@@ -2,34 +2,34 @@
 @import "../utils/placeholders";
 
 .customers__title {
-    @include flex-just-align(flex, center, space-around);
-    font-family: Roboto;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0.03em;
-  }
+  @include flex-just-align(flex, center, space-around);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+}
 
-  .clientage {
-    @include flex-just-align(flex, center, space-evenly);
-    margin: 45px 0px;
-  }
+.clientage {
+  @include flex-just-align(flex, center, space-evenly);
+  margin: 45px 0px;
+}
 
-  .clientage__compani--gray {
-    @extend %number;
-    @include flex-just-align(flex, center, center);
-    &:hover {
-      animation: linearGradient 2s linear both;
-    }
+.clientage__compani--gray {
+  @extend %number;
+  @include flex-just-align(flex, center, center);
+  &:hover {
+    animation: linearGradient 2s linear both;
   }
-  
-  @keyframes linearGradient {
-    from {
-      fill: #0099ff;
-      border: 2px solid #0099ff;
-    }
-    to {
-      fill: #ff0066;
-      border: 2px solid #ff0066;
-    }
+}
+
+@keyframes linearGradient {
+  from {
+    fill: #0099ff;
+    border: 2px solid #0099ff;
   }
+  to {
+    fill: #ff0066;
+    border: 2px solid #ff0066;
+  }
+}
