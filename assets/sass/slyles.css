@@ -156,6 +156,10 @@
   border-radius: 17px;
 }
 
+.main {
+  margin: 0 0 94px 0;
+}
+
 .main__content {
   height: 500px;
   background-image: url(../photo/first_back.png);
