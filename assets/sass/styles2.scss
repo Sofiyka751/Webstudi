@@ -28,6 +28,10 @@
   padding: 0 10px;
 }
 
+.nav__item a:hover::after{
+  bottom: -42px;  
+}
+
 @media (max-width: 768px) {
   .container {
     width: 740px;
