@@ -1,0 +1,193 @@
+@import "../utils/mixins";
+@import "../utils/placeholders";
+
+a {
+  text-decoration: none;
+  color: #1f373d;
+}
+
+.nav2 {
+  display: none;
+}
+
+/* nav-menu */
+nav {
+  flex-grow: 3;
+}
+.nav_menu,
+.sites {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input[type="checkbox"],
+label {
+  display: none;
+}
+
+/* mobile menu */
+@media (max-width: 480px) {
+  .header__nav {
+    padding: 16px 0;
+  }
+  nav {
+    order: 1;
+  }
+  .nav2 {
+    display: flex;
+    gap: 150px;
+  }
+  .nav {
+    display: none;
+  }
+  label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-left: auto;
+    position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
+    top: 15px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  input[type="checkbox"]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type="checkbox"]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type="checkbox"]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav_menu {
+    position: absolute;
+    z-index: 1;
+    top: 52px;
+    left: 0;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    background: #fff;
+  }
+  .nav_menu li {
+    margin: 15px 0;
+  }
+  .nav_menu_link {
+    color: #212121;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    &:hover {
+      color: #087df9;
+    }
+  }
+  .navigation--right2 {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .navigation--right2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navigation--right2 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    padding-top: 100px;
+    background: #fff;
+  }
+  .navigation--right2 address {
+    margin: 15px 0;
+  }
+  .address2:nth-child(1) {
+    order: 1;
+  }
+  .address__right-email2 {
+    color: #757575;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    order: 1;
+  }
+  .address__right-number2 {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+  }
+  .social-programs {
+    display: none;
+  }
+  input[type="checkbox"]:checked ~ .social-programs {
+    display: flex;
+    align-items: flex-start;
+  }
+  .social-programs {
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    padding: 0 40px 0 40px;
+    background: #fff;
+    box-shadow: 0 12px 8px #dddddd;
+  }
+  .sites {
+    gap: 10px;
+  }
+  .sites li {
+    margin: 15px 0;
+  }
+  .social_link {
+    color: #2196f3;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+  }
+}

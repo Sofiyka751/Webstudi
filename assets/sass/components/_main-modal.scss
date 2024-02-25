@@ -62,6 +62,10 @@
   color: #212121;
 }
 
+input[type="name"], label {
+  display: block;
+}
+
 .form__dictates-name,
 .form__dictates-telephon,
 .form__dictates-email,
@@ -166,4 +170,15 @@
   letter-spacing: 0.96px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .modal{
+    width: 400px;
+    height: 610px;
+  }
+  label{
+    height: auto;
+    width: auto;
+  }
 }
