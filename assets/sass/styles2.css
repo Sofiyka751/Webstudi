@@ -230,7 +230,7 @@ label {
   .nav_menu {
     position: absolute;
     z-index: 1;
-    top: 52px;
+    top: 51px;
     left: 0;
     width: 100%;
     padding: 0 40px 0 40px;
@@ -262,7 +262,7 @@ label {
   .navigation--right2 {
     position: absolute;
     z-index: 1;
-    top: 49%;
+    top: 57%;
     left: 0;
     width: 100%;
     padding: 0 40px 0 40px;
@@ -304,7 +304,7 @@ label {
   .social-programs {
     position: absolute;
     z-index: 1;
-    top: 88%;
+    top: 103%;
     left: 0;
     width: 100%;
     padding: 0 40px 0 40px;
