@@ -46,3 +46,15 @@
     animation: gradienSlide 3s both;
   }
 }
+
+// @media (min-device-pixel-ratio: 2), (-webkit-mindevice-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+//   .main__content{
+//     background-image: url("../photo/first_back@2x.png");
+//   }
+// }
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main.main__content {
+    background-image: url("../photo/first_back@2x.png");
+  }
+}

@@ -178,8 +178,7 @@ nav {
   justify-content: space-between;
 }
 
-input[type=checkbox],
-label {
+input[type=checkbox]:nth-child(2), .label {
   display: none;
 }
 
@@ -256,6 +255,7 @@ label {
     width: 100%;
     padding: 0 40px 0 40px;
     background: #fff;
+    z-index: 10;
   }
   .nav_menu li {
     margin: 15px 0;
@@ -289,6 +289,7 @@ label {
     padding: 0 40px 0 40px;
     padding-top: 100px;
     background: #fff;
+    z-index: 10;
   }
   .navigation--right2 address {
     margin: 15px 0;
@@ -331,6 +332,7 @@ label {
     padding: 0 40px 0 40px;
     background: #fff;
     box-shadow: 0 12px 8px #dddddd;
+    z-index: 10;
   }
   .sites {
     gap: 10px;
@@ -418,6 +420,11 @@ label {
   animation: gradienSlide 3s both;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main.main__content {
+    background-image: url("../photo/first_back@2x.png");
+  }
+}
 .footer__text--gray, .footer__text--white {
   font-family: Roboto;
   font-size: 14px;
