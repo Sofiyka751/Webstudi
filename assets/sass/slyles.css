@@ -1295,6 +1295,9 @@ label {
   .container {
     width: 350px;
   }
+  .main-title {
+    width: 11em;
+  }
   .details__text {
     width: 320px;
   }
@@ -1307,5 +1310,8 @@ label {
   }
   .box-text {
     width: 320px;
+  }
+  .clientage__compani--gray {
+    padding: 10px;
   }
 }/*# sourceMappingURL=slyles.css.map */
