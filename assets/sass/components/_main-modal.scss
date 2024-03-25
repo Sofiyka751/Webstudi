@@ -62,7 +62,8 @@
   color: #212121;
 }
 
-input[type="name"], label {
+input[type="name"],
+label {
   display: block;
 }
 
@@ -173,12 +174,20 @@ input[type="name"], label {
 }
 
 @media (max-width: 480px) {
-  .modal{
+  .modal {
     width: 400px;
     height: 610px;
   }
-  label{
+  label {
     height: auto;
     width: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal {
+    width: 320px;
+    height: 581px;
+    left: 45%;
   }
 }

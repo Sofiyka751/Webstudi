@@ -106,3 +106,22 @@
     height: 460px;
   }
 }
+
+@media (max-width: 375px) {
+  .container{
+    width: 350px;
+  }
+  .details__text{
+    width: 320px;
+  }
+  .photo{
+    width: 320px;
+    height: 310px;
+  }
+  .clientage{
+    gap: 10px;
+  }
+  .box-text{
+    width: 320px;
+  }
+}

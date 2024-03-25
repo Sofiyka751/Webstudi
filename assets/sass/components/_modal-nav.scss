@@ -193,3 +193,12 @@ input[type="checkbox"]:nth-child(2),  .label {
     letter-spacing: 0.36px;
   }
 }
+
+@media (max-width: 375px) {
+  .navigation--right2{
+    top: 40%;
+  }
+  .social-programs{
+    top: 73%;
+  }
+}

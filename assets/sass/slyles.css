@@ -350,6 +350,14 @@ input[type=checkbox]:nth-child(2), .label {
     letter-spacing: 0.36px;
   }
 }
+@media (max-width: 375px) {
+  .navigation--right2 {
+    top: 40%;
+  }
+  .social-programs {
+    top: 73%;
+  }
+}
 .footer__text--gray, .footer__text--white {
   font-family: Roboto;
   font-size: 14px;
@@ -508,7 +516,8 @@ input[type=checkbox]:nth-child(2), .label {
   color: #212121;
 }
 
-input[type=name], label {
+input[type=name],
+label {
   display: block;
 }
 
@@ -624,6 +633,13 @@ input[type=name], label {
   label {
     height: auto;
     width: auto;
+  }
+}
+@media (max-width: 375px) {
+  .modal {
+    width: 320px;
+    height: 581px;
+    left: 45%;
   }
 }
 .footer__text--gray, .footer__text--white {
@@ -1273,5 +1289,23 @@ input[type=name], label {
   .photo {
     width: 450px;
     height: 460px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 350px;
+  }
+  .details__text {
+    width: 320px;
+  }
+  .photo {
+    width: 320px;
+    height: 310px;
+  }
+  .clientage {
+    gap: 10px;
+  }
+  .box-text {
+    width: 320px;
   }
 }/*# sourceMappingURL=slyles.css.map */
